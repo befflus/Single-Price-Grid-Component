@@ -1,0 +1,112 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,400;1,700&display=swap');
+
+:root {
+    --cyan: hsl(179, 61%, 44%);
+    --cyan_light: hsl(179, 47%, 52%);
+    --bright_yellow: hsl(71, 73%, 54%);
+    --light_gray: hsl(204, 43%, 93%);
+    --grayish_blue: hsl(218, 22%, 49%);
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif; 
+    background-color: var(--light_gray);
+    color: var(--light_gray);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.section {
+    width: 100%;
+    padding: 30px;    
+}
+h1 {
+    font-weight: 700;
+    color: var(--cyan);
+    font-size: 1.6em;     
+}
+
+h2 {
+    color: white;
+}
+
+#join {
+    background-color: white;
+    color: var(--grayish_blue);
+    line-height: 1.8em;
+}
+
+#bright-yellow {
+    color: var(--bright_yellow);
+    font-weight: 800;
+}
+
+#subscription {
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+}
+
+#why {
+    background-color: var(--cyan_light);    
+}
+
+button {
+    background-color: var(--bright_yellow);
+    color: white;
+    border-style: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    align-self: center;
+}
+
+#price {
+    font-size: 2em;
+}
