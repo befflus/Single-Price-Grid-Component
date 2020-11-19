@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 :root {
     --cyan: hsl(179, 62%, 43%);
     --cyan_light: hsl(179, 47%, 52%);
@@ -24,33 +24,36 @@ body {
     align-items: center;
     width: 100%;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
 }
 
 .section {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
 }
+
 
 h1 {
     font-weight: 700;
     color: var(--cyan);
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 h2 {
     color: white;
+    margin-bottom: 0px;
 }
 
 #join {
     background-color: white;
     color: var(--grayish_blue);
-    line-height: 1.8em;
+    line-height: 1.7em;
 }
 
 #bright-yellow {
     color: var(--bright_yellow);
     font-weight: 800;
+    font-size: 1.1em;
 }
 
 #subscription {
@@ -59,20 +62,48 @@ h2 {
     flex-direction: column;
 }
 
-#why {
-    background-color: var(--cyan_light);
+#subscription p {
+    line-height: 30px;
 }
-
 button {
     background-color: var(--bright_yellow);
     color: white;
     border-style: none;
     padding: 15px;
     border-radius: 5px;
-    width: 80%;
+    width: 100%;
     align-self: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#why {
+    background-color: var(--cyan_light);
+}
+
+#why-us-list {
+    list-style: none;
+    line-height: 1.4em;
+    padding-left: 0pt;
 }
 
 #price {
     font-size: 2em;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
 }
+
+.attribution {
+    font-size: 11px;
+    display: flex; 
+    justify-content: space-evenly;
+    width: 90%; 
+    margin: 40px auto;
+    color: var(--grayish_blue);
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    margin: auto;
+  }
