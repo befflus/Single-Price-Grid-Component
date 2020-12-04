@@ -67,12 +67,13 @@ button {
     border-radius: 5px;
     width: 100%;
     align-self: center;
-    font-size: 1.1em;      
+    font-size: 1.1em;          
 }
 
 button:hover {
     background-color: rgb(93, 228, 228);
     color: rgb(96, 81, 182);
+    cursor: pointer;
 }
 
 #why {
