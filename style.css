@@ -17,18 +17,11 @@ body {
     background-color: var(--light_gray);
     color: var(--light_gray);
 }
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    width: 100%;
-    margin: auto;
-}
-
-.section {
-    width: 100%;
-    padding: 20px;
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 h1 {
@@ -42,10 +35,8 @@ h2 {
     margin-bottom: 0px;
 }
 
-#join {
-    background-color: white;
-    color: var(--grayish_blue);
-    line-height: 1.7em;
+.section {
+    padding: 20px;
 }
 
 #bright-yellow {
@@ -54,10 +45,32 @@ h2 {
     font-size: 1.1em;
 }
 
-#subscription {
+#join{
+    background-color: white;
+    color: var(--grayish_blue);
+    line-height: 1.7em;
+}
+
+#subscription{
     background-color: var(--cyan);
     padding-bottom: 0px;
-    }
+}
+
+#why{
+    background-color: var(--cyan_light);
+}
+#why-us-list {
+    list-style: none;
+    line-height: 1.4em;
+    padding-left: 0pt;
+}
+
+#price {
+    font-size: 2em;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+}
 
 button {
     background-color: var(--bright_yellow);
@@ -75,25 +88,6 @@ button:hover {
     color: rgb(96, 81, 182);
     cursor: pointer;
 }
-
-#why {
-    background-color: var(--cyan_light);
-    height: 100%;
-}
-
-#why-us-list {
-    list-style: none;
-    line-height: 1.4em;
-    padding-left: 0pt;
-}
-
-#price {
-    font-size: 2em;
-    display: inline-block;
-    margin-right: 10px;
-    font-weight: 700;
-}
-
 footer {
     width: 60%;
     margin: auto;
@@ -110,37 +104,28 @@ footer {
     color: hsl(228, 45%, 44%);
   }
 
-@media (min-width: 640px) {
+ @media (min-width: 768px) {
     .content {
-        max-width: 80%;
-    }
-
-}
-
-@media (min-width: 790px) {
-   
-
-    .content {
-        margin-top: 100px;
-        max-width: 720px;
-        width: 60%;
-        flex-direction: row;
-        flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 15%;
     }
 
     #join {
-        width: 100%
+        grid-column: 1/3;        
     }
 
     #subscription {
-        width: 50%;
-        padding-left: 20px;
+        grid-column: 1fr;
     }
 
     #why {
-        height: 100%;
-        width: 50%;
-        padding-left: 30px;
-        padding-bottom: 40px;
-    }  
+        grid-column: 1fr;
+    }
+
 }
